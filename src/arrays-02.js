@@ -115,10 +115,7 @@ function replaceTheString(str, oldStr, newStr) {
  */
 function makeSentenceTitleCase(sentence) {
   const words = sentence.split(' ');
-  const capitalizedWords = [];
-  for (const word of words) {
-    capitalizedWords.push(makeWordTitleCase(word));
-  }
+  const capitalizedWords = words.map((word) => makeWordTitleCase(word));
   return capitalizedWords.join(' ');
 }
 

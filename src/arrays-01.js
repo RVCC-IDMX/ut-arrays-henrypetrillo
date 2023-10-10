@@ -36,10 +36,9 @@ function getFirstValue(arr) {
  * @returns {array} - array of the 4 elements
  */
 function makeArray(a, b, c, d) {
-  let arr = [a, b, c, d];
+  const arr = [a, b, c, d];
   return arr;
 }
-
 
 /**
  * Creates a new array of the first 5 prime numbers
@@ -49,7 +48,7 @@ function makeArray(a, b, c, d) {
  *
  */
 function createFirstFivePrimes() {
-  let arr = [2, 3, 5, 7, 11];
+  const arr = [2, 3, 5, 7, 11];
   return arr;
 }
 /**
@@ -61,8 +60,8 @@ function createFirstFivePrimes() {
  * ? must use a for loop
  */
 function createSizedArray(size) {
-  let arr = [];
-  for (let i = 0; i < size; i++) {
+  const arr = [];
+  for (let i = 0; i < size; i += 1) {
     arr.push(i);
   }
   return arr;
