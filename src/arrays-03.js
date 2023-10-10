@@ -56,12 +56,14 @@ function filterForLargeWords(arr, length) {
  * ? must use the find() array method - https://youtu.be/KCx0mQEC4Zw
  */
 function findTheFirstEvenNumber(arr) {
+  let value = 0;
   for (let i = 0; i < arr.length; i += 1) {
     if (arr[i] % 2 === 0) {
-      return arr[i];
+      value = arr[i];
+      break;
     }
   }
-  return findTheFirstEvenNumber(arr);
+  return value;
 }
 
 /**
@@ -74,14 +76,15 @@ function findTheFirstEvenNumber(arr) {
  */
 function sortCaseSensitive(arr) {
   const newArr = [...arr];
+  let value = 0;
   return newArr.sort((a, b) => {
     if (a < b) {
-      return -1;
+      value = -1;
     }
     if (a > b) {
-      return 1;
+      value = 1;
     }
-    return 0;
+    return value;
   });
 }
 
